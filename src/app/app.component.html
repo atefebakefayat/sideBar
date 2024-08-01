@@ -3,3 +3,10 @@
     <mat-icon>menu</mat-icon>
   </button>
 </mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav opened mode="side" [style.width]="'250px'"> hello</mat-sidenav>
+  <mat-sidenav-content class="content">
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
