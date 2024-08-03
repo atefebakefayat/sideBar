@@ -1,0 +1,15 @@
+<div class="sidenav-header">
+    <img src="../../../assests/profile.jpg" [width]="profilePicSize()" [height]="profilePicSize()" />
+    <div class="header-text">
+        <h2>your channel</h2>
+        <p> atefeh bakefayat</p>
+    </div>
+</div>
+<mat-nav-list>
+    @for(item of menuItems(); track item) {
+    <a mat-list-item>
+        <mat-icon matListItemIcon>{{item.icon}}</mat-icon>
+        <span matListItemTitle>{{item.label}}</span>
+    </a>
+    }
+</mat-nav-list>
