@@ -1,15 +1,17 @@
 <div class="sidenav-header">
-    <img src="../../../assests/profile.jpg" [width]="profilePicSize()" [height]="profilePicSize()" />
-    <div class="header-text">
+    <img src="assets/profile.jpg" [width]="profilePicSize()" [height]="profilePicSize()" />
+    <div class="header-text" [class.hide-header-text]="sideNavCollapsed()">
         <h2>your channel</h2>
         <p> atefeh bakefayat</p>
     </div>
 </div>
 <mat-nav-list>
     @for(item of menuItems(); track item) {
-    <a mat-list-item>
+    <a mat-list-item [routerLink]="item.route" routerLinkActive #rla="routerLinkActive" [activated]="rla.isActive">
         <mat-icon matListItemIcon>{{item.icon}}</mat-icon>
+        @if(!sideNavCollapsed()){
         <span matListItemTitle>{{item.label}}</span>
+        }
     </a>
     }
 </mat-nav-list>
