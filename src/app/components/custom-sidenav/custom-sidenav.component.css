@@ -1,12 +1,12 @@
 :host * {
     transition: all 500ms ease-in-out;
-    
+
 }
 
 .sidenav-header {
     padding-top: 24px;
     text-align: center;
-    
+
 }
 
 img {
@@ -33,18 +33,12 @@ img {
     height: 0px !important;
 }
 
-.menu-item{
-    padding: 24px ;  
- 
+.menu-item {
+    padding: 24px;
+
 }
 
 .selected-menu-item {
-    border-left-color: rgb(99, 30, 99); 
+    border-left-color: rgb(99, 30, 99);
     background: rgb(240, 226, 240) !important;
 }
-
-
-
-
-
-
