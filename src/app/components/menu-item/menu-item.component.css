@@ -11,3 +11,7 @@
     border-left-color: rgb(99, 30, 99);
     background: rgb(240, 226, 240) !important;
 }
+
+.indented {
+    --mat-list-list-item-leading-icon-start-space: 48px;
+}
