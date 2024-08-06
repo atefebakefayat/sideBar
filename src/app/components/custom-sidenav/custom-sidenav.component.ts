@@ -15,7 +15,7 @@ export type MenuItem = {
 @Component({
   selector: 'app-custom-sidenav',
   standalone: true,
-  imports: [CommonModule, MatListModule, MatIconModule, RouterLink, RouterLinkActive, MatIcon,MenuItemComponent],
+  imports: [CommonModule, MatListModule, MatIconModule, RouterLink, RouterLinkActive, MatIcon, MenuItemComponent],
   templateUrl: './custom-sidenav.component.html',
   styleUrl: './custom-sidenav.component.css'
 })
@@ -43,6 +43,19 @@ export class CustomSidenavComponent {
           icon: 'play_circle',
           label: 'videos',
           route: 'videos',
+          subItems: [
+            {
+              icon: 'movie',
+              label: 'Shorts',
+              route: 'shorts',
+            },
+            {
+              icon: 'tv',
+              label: 'Long Form',
+              route: 'long-form',
+            },
+
+          ]
         },
         {
           icon: 'playlist_play',
