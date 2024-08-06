@@ -1,5 +1,6 @@
 <a mat-list-item class="menu-item" [routerLink]="routeHistory() +'/'+ item().route" (click)="toggleNested()"
-    routerLinkActive="selected-menu-item" #rla="routerLinkActive" [activated]="rla.isActive">
+    routerLinkActive="selected-menu-item" #rla="routerLinkActive" [activated]="rla.isActive"
+    [style.--mat-list-list-item-leading-icon-start-space]="indentation()">
 
     <mat-icon [fontSet]="rla.isActive ?  'material-icons' : 'material-icons-outlined' "
         matListItemIcon>{{item().icon}}</mat-icon>
